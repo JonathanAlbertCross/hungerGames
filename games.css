@@ -1,31 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;0,800;0,900;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap");
 
-* {
+body {
   margin: 0;
   padding: 0;
   background-color: #44bba4;
 }
 
-/* CSS for Games.html */
+h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  z-index: -2;
+  color: white;
+}
 
 :root {
   --width: 250px;
   --height: calc(var(--width) / 2);
 }
 .gameButtons {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
   background-color: #e7bb41;
+  border: none;
+  border-radius: 100%;
+  font-size: 30px;
+  padding: 5px;
+  color: rgb(60, 60, 60);
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  cursor: grabbing;
+  background-repeat: no-repeat;
+  position: absolute;
+  animation: toRight linear 3.3s infinite alternate,
+    bounce linear 3.7s infinite alternate, mymove 5s infinite;
+}
+
+.gameButton1 {
+  cursor: progress;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  background-color: #c1292e;
   border: none;
   border-radius: 50%;
   font-size: 30px;
   padding: 5px;
   color: white;
-  width: var(--width);
-  height: var(--height);
+  width: 200px;
+  height: 200px;
+  z-index: -1;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  animation: toRight linear 3.3s infinite alternate,
-    bounce linear 3.7s infinite alternate, mymove 5s infinite;
+  animation: toRight linear 7.3s infinite alternate,
+    bounce linear 7.7s infinite alternate, mymove 5s infinite;
+}
+
+.gameButton2 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  background-color: #c1292e;
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  animation: toRight linear 6.8s infinite alternate,
+    bounce linear 6.2s infinite alternate, mymove 5s infinite;
 }
 
 @keyframes mymove {

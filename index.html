@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js">
+    <script src="/JS/app.js">
       defer
     </script>
     <title>Hunger Games</title>
@@ -24,6 +24,16 @@
       <video autoplay muted loop id="myVideo">
         <source src="./videos/Paper_art_Rocket.mp4" type="video/mp4" />
       </video>
+      <form id="nameForm">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name"
+        />
+        <button type="submit" class="functionbutton">Play</button>
+        <div class="messageDiv"></div>
     </main>
     <footer></footer>
   </body>

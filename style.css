@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;0,800;0,900;1,500&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;0,800;0,900;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap");
 
 * {
   box-sizing: border-box;
@@ -33,7 +33,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
-  color: #fafafa;
+  color: #a09f9f;
   text-decoration: none;
 }
 
@@ -47,10 +47,34 @@ header {
   opacity: 0.8;
 }
 
-footer {
-  background-color: aqua;
+#nameForm {
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
+  padding: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  border: none;
+}
+
+#name {
+  min-width: 250px;
+  min-height: 40px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+}
+
+.functionbutton {
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(82, 82, 82);
+  background-color: white;
+  text-decoration: none;
+  border: 5px solid gray;
+}
+
+.functionbutton :hover {
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .navLinks {
@@ -67,7 +91,7 @@ footer {
 }
 
 .navLinks li a:hover {
-  color: #ffae51;
+  color: #ffffff;
   font-weight: bolder;
   letter-spacing: 1.5px;
 }
@@ -77,4 +101,55 @@ footer {
   width: 3rem;
   max-height: 100%;
   cursor: pointer;
+}
+/* CSS for Games.html */
+
+:root {
+  --width: 250px;
+  --height: calc(var(--width) / 2);
+}
+.gameButtons {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 40px;
+  padding: 100px;
+  width: var(--width);
+  height: var(--height);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(90deg) 4s;
+  animation: toRight linear 3.3s infinite alternate,
+    bounce linear 3.7s infinite alternate, mymove 5s infinite;
+}
+@keyframes mymove {
+  50% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  48% {
+  }
+  50% {
+    top: calc(100% - var(--height));
+  }
+  52% {
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes toRight {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: calc(100% - var(--width));
+  }
 }

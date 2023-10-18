@@ -3,7 +3,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -29,8 +28,8 @@ h1 {
 ul,
 li,
 a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Space Mono", monospace;
+  font-weight: 300;
   font-size: 16px;
   letter-spacing: 1px;
   color: #a09f9f;
@@ -51,12 +50,11 @@ header {
   display: flex;
   justify-content: center;
   padding: 100px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  border: none;
 }
 
 #name {
+  font-family: "Space Mono", monospace;
+  font-weight: 300;
   min-width: 250px;
   min-height: 40px;
   font-size: 20px;
@@ -64,7 +62,15 @@ header {
   border: none;
 }
 
+#letsPlay {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
 .functionbutton {
+  font-family: "Space Mono", monospace;
+  font-weight: 300;
   font-size: 20px;
   padding: 10px;
   color: rgb(82, 82, 82);
@@ -77,8 +83,24 @@ header {
   border: 2px solid rgb(255, 255, 255);
 }
 
+.hidden {
+  display: none !important;
+}
+
 .navLinks {
   list-style: none;
+}
+
+#messageDiv {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
 }
 
 .navLinks li {
@@ -101,55 +123,4 @@ header {
   width: 3rem;
   max-height: 100%;
   cursor: pointer;
-}
-/* CSS for Games.html */
-
-:root {
-  --width: 250px;
-  --height: calc(var(--width) / 2);
-}
-.gameButtons {
-  background-color: white;
-  border-radius: 50%;
-  font-size: 40px;
-  padding: 100px;
-  width: var(--width);
-  height: var(--height);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  transform: rotate(90deg) 4s;
-  animation: toRight linear 3.3s infinite alternate,
-    bounce linear 3.7s infinite alternate, mymove 5s infinite;
-}
-@keyframes mymove {
-  50% {
-    transform: rotate(180deg);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    top: 0;
-  }
-  48% {
-  }
-  50% {
-    top: calc(100% - var(--height));
-  }
-  52% {
-  }
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes toRight {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: calc(100% - var(--width));
-  }
 }

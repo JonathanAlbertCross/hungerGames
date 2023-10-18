@@ -63,6 +63,7 @@ h1 {
 }
 
 .gameButton2 {
+  cursor: progress;
   font-family: "Space Mono", monospace;
   font-weight: 700;
   background-color: #c1292e;

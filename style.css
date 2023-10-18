@@ -46,6 +46,28 @@ header {
   opacity: 0.8;
 }
 
+.navLinks li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.navLinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+  color: #ffffff;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
+.logo {
+  margin-right: auto;
+  width: 3rem;
+  max-height: 100%;
+  cursor: pointer;
+}
+
 #nameForm {
   display: flex;
   justify-content: center;
@@ -102,26 +124,4 @@ input {
   align-items: center;
   text-align: center;
   padding: 30px;
-}
-
-.navLinks li {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.navLinks li a {
-  transition: all 0.3s ease 0s;
-}
-
-.navLinks li a:hover {
-  color: #ffffff;
-  font-weight: bolder;
-  letter-spacing: 1.5px;
-}
-
-.logo {
-  margin-right: auto;
-  width: 3rem;
-  max-height: 100%;
-  cursor: pointer;
 }

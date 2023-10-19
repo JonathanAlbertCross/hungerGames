@@ -57,12 +57,13 @@ cardArray.sort(() => 0.5 - Math.random());
 const gridDisplay = document.querySelector("#grid");
 
 function createBoard() {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < cardArray.length; i++) {
     // this will create 10 image tags
     const card = document.createElement("img");
     // attached the blank image to these tags
     card.setAttribute("src", "images/blank.jpg");
-    console.log(card, i);
+    // adds the cards on the page
+    gridDisplay.append(card);
   }
 }
 

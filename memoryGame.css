@@ -58,3 +58,10 @@ header {
   max-height: 100%;
   cursor: pointer;
 }
+
+#grid img {
+  width: 250px;
+  height: 100%;
+  border: 3px solid #a09f9f;
+  margin: 10px;
+}

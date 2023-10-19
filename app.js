@@ -2,11 +2,6 @@ const nameForm = document.getElementById("nameForm");
 const letsPlay = document.querySelector("#letsPlay");
 let userName;
 
-if (localStorage.getItem("pastChartsFromLs")) {
-  pastCharts = JSON.parse(localStorage.getItem("pastChartsFromLs"));
-  pastUsers = JSON.parse(localStorage.getItem("pastUsersFromLs"));
-}
-
 nameForm.addEventListener("submit", function (event) {
   event.preventDefault();
   userName = document.getElementById("name").value;

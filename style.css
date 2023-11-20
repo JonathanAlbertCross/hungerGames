@@ -5,16 +5,6 @@
   margin: 0;
 }
 
-h1 {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: center;
-  font-size: 6rem;
-  text-align: justify;
-}
-/* Style the video: 100% width and height to cover the entire window */
-
 #myVideo {
   position: fixed;
   object-fit: cover;
@@ -25,11 +15,30 @@ h1 {
   height: 100vh;
 }
 
+button.playButton {
+  color: white;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.2); /* Set your desired background color */
+  padding: 5px 70px; /* Adjust the padding as needed */
+  border: 2px solid white;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
 ul,
 li,
 a {
   font-family: "Spectral", serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
   color: #a09f9f;
@@ -37,13 +46,22 @@ a {
 }
 
 h1 {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
   font-family: "Spectral", serif;
-  font-weight: 300;
-  font-size: 160px;
-  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 3px;
   color: #ffffff;
   text-decoration: none;
+  display: flex;
+  text-align: center;
+  line-height: 90px;
+  margin: 50px 0px 0px 0px;
 }
+
 header {
   display: flex;
   justify-content: flex-end;
@@ -52,6 +70,19 @@ header {
   text-decoration: none;
   background-color: black;
   opacity: 0.8;
+}
+
+.mern {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px 10px;
+  padding: 10px 10px 50px 50px; /* Add padding for better readability */
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white;
 }
 
 .navLinks li {

@@ -153,3 +153,29 @@ h1 {
     left: calc(100% - var(--width));
   }
 }
+
+.mern {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px 10px;
+  padding: 10px 10px 200px 50px; /* Add padding for better readability */
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white;
+}
+.mern2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px 10px;
+  padding: 10px 10px 100px 800px;
+  font-family: "Space Mono", monospace;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white;
+}

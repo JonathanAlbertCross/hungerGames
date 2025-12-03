@@ -19,7 +19,7 @@ header {
 ul,
 li,
 a {
-  font-family: "Spectral", serif;
+  font-family: "Space Mono", monospace;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
@@ -156,14 +156,14 @@ h1 {
 
 .mern {
   position: fixed;
-  bottom: 0;
+  bottom: 100;
   left: 0;
   margin: 10px 10px;
   padding: 10px 10px 200px 50px; /* Add padding for better readability */
   font-family: "Space Mono", monospace;
-  font-weight: 700;
+  font-weight: 600;
 
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
   color: white;
 }

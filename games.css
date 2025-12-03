@@ -48,6 +48,7 @@ a {
 
 h1 {
   font-family: "Space Mono", monospace;
+  line-height: 0.8;
   font-weight: 700;
   font-size: 100px;
   display: flex;
@@ -156,7 +157,7 @@ h1 {
 
 .mern {
   position: fixed;
-  bottom: 100;
+  bottom: -10;
   left: 0;
   margin: 10px 10px;
   padding: 10px 10px 200px 50px; /* Add padding for better readability */

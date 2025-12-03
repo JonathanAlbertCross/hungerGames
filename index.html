@@ -20,9 +20,37 @@
     <main>
       <h1><form action=""></form></h1>
       <div class="video-overlay">
-       <video autoplay muted loop playsinline id="myVideo">
+    <video
+  id="myVideo"
+  autoplay
+  muted
+  loop
+  playsinline
+  webkit-playsinline
+>
   <source src="./videos/sisyphus.mp4" type="video/mp4" />
 </video>
+<script>
+  const vid = document.getElementById('myVideo');
+
+  // Try to play as soon as possible
+  if (vid) {
+    const tryPlay = () => {
+      vid.play().catch(() => {
+        // ignore errors – iOS may still block, but we tried
+      });
+    };
+
+    // Attempt immediate play
+    tryPlay();
+
+    // Fallback: play on first tap/click
+    window.addEventListener('touchstart', tryPlay, { once: true });
+    window.addEventListener('click', tryPlay, { once: true });
+  }
+</script>
+
+
 
       </div>
 

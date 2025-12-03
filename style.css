@@ -48,11 +48,12 @@ a {
 h1 {
   display: flex;
   justify-content: center;
-
+  padding-left: 40px;
+  padding-right: 40px;
   text-align: center;
   font-family: "Spectral", serif;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 90px;
   letter-spacing: 3px;
   color: #ffffff;
   text-decoration: none;
